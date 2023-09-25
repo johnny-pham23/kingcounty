@@ -3,13 +3,13 @@ console.log('Is this working?');
 let viz;
 
 //Add Share Link to Tableau Public in here
-const url = "https://public.tableau.com/views/LondonBikeRides_16956235905790/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link";
+const url = "https://public.tableau.com/shared/9Z67RT9Y5?:display_count=n&:origin=viz_share_link";
 
 const vizContainer = document.getElementById('vizContainer');
 const options = {
     hideTabs: true,
     height: 1000,
-    width: 1200,
+    width: 2000,
     onFirstInteraction: function() {
         workbook = viz.getWorkbook();
         activeSheet = workbook.getActiveSheet();
